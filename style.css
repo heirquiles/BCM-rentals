@@ -1,0 +1,72 @@
+/* Global CSS variables */
+:root {
+    --spacing-company: 3rem;
+    --font-weight: 400;
+    --border-radius: 0;
+  }
+  
+  /* Typography */
+  h2,
+  h3,
+  hgroup> :last-child {
+    font-weight: 200;
+  }
+  
+  
+  /* Header */
+  .hero {
+    background-color: #394046;
+    background-image: url("https://images.unsplash.com/photo-1600965593858-cb2ba22ca853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  header {
+    padding: var(--spacing-company) 0;
+  }
+  
+  header hgroup> :last-child {
+    color: var(--h3-color);
+  }
+  
+  header hgroup {
+    margin-bottom: var(--spacing-company);
+  }
+  
+  /* Nav */
+  summary[role="link"].contrast:is([aria-current], :hover, :active, :focus) {
+    background-color: transparent;
+    color: var(--contrast-hover);
+  }
+  
+  button {
+    /* padding: 0;
+    margin: 0; */
+    border-radius: 4px;
+    width: fit-content;
+  }
+  /* Main */
+  @media (min-width: 992px) {
+    main .grid {
+      grid-column-gap: var(--spacing-company);
+      grid-template-columns: auto 25%;
+    }
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  form.grid {
+    grid-row-gap: 0;
+  }
+  
+  /* Aside nav */
+  aside img {
+    margin-bottom: 0.25rem;
+  }
+  
+  aside p {
+    margin-bottom: var(--spacing-company);
+    line-height: 1.25;
+  }
+
